@@ -1,0 +1,129 @@
+
+
+
+Day-1 : 14-08-2023
+=================
+
+Spring Framework:
+=================
+
+framework
+		invasive		Struts 
+		
+		non-invasive 	spring,hibernate
+
+
+
+
+Servlet,EJB--heavy weight component
+
+
+class Login  
+{
+
+//12 
+
+}
+1*12=12
+100*12=1200
+
+	rod johnson --> 2003 1.x
+						 5.x
+						 6.x
+
+
+	interface21 --->spring framework
+	
+		light weight ,loosley coupled
+	
+	spring is non-invasive framework which is used to create light weight and loosley coupled application
+	
+	
+	class A
+	{
+			A(String name)
+			{
+			
+			}
+			
+			m1()
+			{
+			
+			}
+	}
+
+	class B
+	{
+		
+	B()
+	{
+A a;
+	a.m1()
+	}
+	
+	
+	}
+		Spring :loosley coupled -->spring container 
+		
+		Life Cycle Object
+				Creation of object
+				wiring the object
+				configuring 
+				destroying 
+		
+		BeanFactory			-->Lazy intializer
+		ApplicationContext -->Eager Intializer 
+		
+		
+		20+
+		Spring CORE--->dependency injection module /IOC
+							
+							setter injection				configuration -->xml config,annotation config,java config
+							constructor injection
+							autowiring 
+			
+			@
+		NOTE:
+spring has given annotations like @component,@Service,@Repository,@ComponentScan,@Configuration,@Autowired for 
+user defined classes but not for predefined classes 
+					DB-datasource,view resolver,EntityManager,EntityManagerFactory,Transaction.........
+			
+			xml,java 	@Bean
+			
+			Spring Boot-->
+			
+				1)auto configuration
+				2)embeded server tomcat
+				3)starters		
+				4)Actuators
+			
+			
+			
+		spring jdbc
+				orm
+				security
+				web
+				aop
+				..
+				.
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
