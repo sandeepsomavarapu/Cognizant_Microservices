@@ -92,12 +92,12 @@ user defined classes but not for predefined classes
 			
 			Spring Boot-->
 			
-				1)auto configuration
-				2)embeded server tomcat
-				3)starters		
-				4)Actuators
+				1)auto configuration	:most of the commonly used classes already configured by the spring boot
+				2)embeded server tomcat :8080
+				3)starters				:maven  bundle jars 
+				4)Actuators				:end point url health,env,beans.......
 			
-			
+				springbootstarter-jpa 60 jars 
 			
 		spring jdbc
 				orm
@@ -107,23 +107,146 @@ user defined classes but not for predefined classes
 				..
 				.
 				
+	Spring Boot:
+================	
+		STS-->spring tool suite		-->pivotal
 		
 		
 		
 		
 		
+		ProductManagementApplications:
+		==============================
+		
+				1)Add Product
+				2)Update Product
+				3)Delete Product
+				4)Get Product
+				5)GetAll Products
+		
+								JSON   key:value
+		webservices: 		APP <---> App
+		-------------
+		
+		X ATM machine-->bank application
 		
 		
+		SBI atm card
 		
+				
+				SOAP -->XML
+				
+				REST-->XML,JSON,pt,html,js
 		
+		Employee emp=new Employee(123,"sandeep",2300,"rps");
 		
+		Jackson api			jax-b
+				JSON
 		
+				{
+				"eid":123,
+				"ename":"sandeep",
+				"esal":2300,
+				"orgName":"rps"
+
+				}
 		
+springboot rest
+
+
+			POSTMAN
+			
+Microservices:
+=============	Monolithic		
+			
+	NOTE:
+		Decompose/split/devide  your large project into smaller services later communicate them..
+			
+			
+			
+			
+			Independently Deployeable
+			
+			
+	ShoppingCart
+			-->5 projects
+				4 microservices
+				1 -UI
+			
+			
+			microservice <--->microservice
+			
+			
+			ecart MS<--> order 		
+			
+			
+			two types communication
+			
+				1)Asynchronous     messaging protocols (kafka,rabitmq,activemq.....)
+				
+				2)Synchronous       RestTemplate
+			
+			
+			
+		</dependency>
+			<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc8</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+			
+			
+			
+Principles  of microservices:
+============================
+
+	SOLID--one and only one  reposibility for each microservice
+
+business-functionality
+
+
+Independently Deployeable
+
+
+
+			
+Spring Cloud:
+=============		
+			
+		Use Fault Tolerance techniques	
+			
+			
+				circuit breaker pattern 
+				
+					2
+				
+		Netflix	Hystrix	
+				
+				starters
+				
+				
+				spring-boot-starter-jpa
+				
+				
+				spring-cloud-starter-hystrix
+				
+				
+				spring-cloud-starter-hystrix-dashboard
+				
+				
+		@EnableCircuitBreaker		
 		
-		
-		
-		
-		
-		
-		
-		
+		@EnableHystrixDashBoard		
+				
+		@HystrixCommand(fallbackmethod="myfbmethod")	
+				
+				
+				
+				student microservice		8098
+				
+				school microservice			9098 hystrix
+				
+				
+				
+				
+			
