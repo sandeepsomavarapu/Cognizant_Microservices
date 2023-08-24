@@ -95,7 +95,7 @@ user defined classes but not for predefined classes
 				1)auto configuration	:most of the commonly used classes already configured by the spring boot
 				2)embeded server tomcat :8080
 				3)starters				:maven  bundle jars 
-				4)Actuators				:end point url health,env,beans.......
+				4)Actuators				:end point url health,env,beans.......actuators
 			
 				springbootstarter-jpa 60 jars 
 			
@@ -248,5 +248,111 @@ Spring Cloud:
 				
 				
 				
-				
+	api	GATEWAY	-->SINGLE ENTRY POINT	
+			
+				AUTHENTICATION
+				MONITORING
+				LOAD BALAENCING
+				CACHING....
+			
+			
+		2 THINGS
+
+			ROUTES--->MICRO
+	
+			
+			
+			fault tolarance-->hystrix
+		
+			api gate way 	-->cloud gate way
+			
+			cloud /centralized config  ---> config server
+			
+		service discovery and registry-->eureka server (@EnableEurekaServer , @EnableDiscoveryClient)
+			
+			tracing -->zipkin slueth
+			
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>
+				spring-cloud-starter-netflix-eureka-client
+			</artifactId>
+		</dependency>
+			
+			
+
+distributed tracing -->zipkin  at twitter
+		
+		collector
+		storage
+		search
+		webui
+			
+	Sleuth		
+			
+			
+			input {
+  file {
+    type => "java"
+    path => "C:/elk/spring-boot-elk.log"
+    codec => multiline {
+      pattern => "^%{YEAR}-%{MONTHNUM}-%{MONTHDAY} %{TIME}.*"
+      negate => "true"
+      what => "previous"
+    }
+  }
+}
+ 
+filter {
+  #If log line contains tab character followed by 'at' then we will tag that entry as stacktrace
+  if [message] =~ "\tat" {
+    grok {
+      match => ["message", "^(\tat)"]
+      add_tag => ["stacktrace"]
+    }
+  }
+ 
+}
+ 
+output {
+   
+  stdout {
+    codec => rubydebug
+  }
+ 
+  # Sending properly parsed log events to elasticsearch
+  elasticsearch {
+    hosts => ["localhost:9200"]
+  }
+}
+			
+			Security
+			securing rest api
+			
+AUTHENTICATION	:	
+			
+			
+			
+AUTHORIZATION	:	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		
 			
