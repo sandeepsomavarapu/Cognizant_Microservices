@@ -341,18 +341,35 @@ AUTHORIZATION	:
 			
 			
 			
+Exception Handling:
+==================
+spring boot	 rest exception handling		
+			
+			
+Bean Validations
+			
+			
+			spring rest exception handling
+			@ControlerAdvice
+			@@ExceptionHandler
+			
+			
+			controller level exception handling
+			
+			application level exception handling
 			
 			
 			
+			1XX :informational
 			
+			2XX :Success		200-->ok,201-->created,202-->accepted,203-->authrative info
+								204--> no content
 			
-			
-			
-			
-			
-			
-			
-			
-			
+			3XX:Redirection
 		
+			4XX:Client Error
 			
+			5XX :server error	
+			
+			
+https://en.wikipedia.org/wiki/List_of_HTTP_status_codes			
