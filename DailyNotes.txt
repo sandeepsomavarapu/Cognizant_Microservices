@@ -358,7 +358,7 @@ Bean Validations
 			
 			application level exception handling
 			
-			
+			validations-
 			
 			1XX :informational
 			
@@ -373,3 +373,122 @@ Bean Validations
 			
 			
 https://en.wikipedia.org/wiki/List_of_HTTP_status_codes			
+
+
+
+
+postman
+
+Swagger:postman
+=========
+
+	springfox-swagger2
+	
+	springfox-swagger-ui
+
+@EnableSwagger
+
+@Configuration
+
+Multiple service instances per host
+
+Service instance per host
+
+Service instance per VM
+
+Service instance per Container
+
+Serverless deployment 
+
+Service deployment platform 
+
+
+
+Service instance per VM:
+=========================
+
+problem :
+==========
+
+how are services packaged and deployed?
+
+
+Independently Deployeable and scalable
+
+
+
+NOTE: package  the service as a vm image and  deploy each service as a seperate VM
+
+		
+		Examples: netflix EC2 AMI(Amazon Machine Images )-->EC2
+
+	scaling up scaling down is going to be automatic
+
+
+Service instance per Container:
+================================
+
+NOTE: package  the service as a docker(container) image and  deploy each service instance as a container
+
+
+kubernetes
+
+Multiple service instances per host :
+=====================================
+
+either signle jvm process
+multiple JVM process
+
+
+effective way of resource utilization
+
+
+
+
+
+
+
+Service instance per host:
+=========================
+
+
+deploy each single service instance on its own host
+
+
+
+Serverless deployment :
+======================
+
+"deployment infrastructure"
+
+		AWS Lambda is a serverless
+
+
+
+Service deployment platform :
+=================================
+docker swarm mode and kubernetes
+
+
+Best Practices:
+===============
+
+		ArrayList<String> al=new ArrayList();
+
+isEmpty()
+			
+
+forEach
+
+ArrayList,HashSet,HashMap
+
+			
+HashMap,
+
+
+ConcurrentHashMap
+CopyOnWriteArrayList
+CopyOnWriteArraySet
+
+
+
