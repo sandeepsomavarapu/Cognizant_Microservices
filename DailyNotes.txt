@@ -386,7 +386,7 @@ Swagger:postman
 	
 	springfox-swagger-ui
 
-@EnableSwagger
+@EnableSwagger2
 
 @Configuration
 
@@ -491,4 +491,46 @@ CopyOnWriteArrayList
 CopyOnWriteArraySet
 
 
+ELK
 
+ElasticSearch:NOSQL DB
+
+Logstash log pipe line
+
+Kibana UI
+
+
+
+
+https://www.elastic.co/downloads/elasticsearch
+
+
+https://www.elastic.co/downloads/kibana
+
+
+https://www.elastic.co/downloads/logstash
+
+
+
+https://howtodoinjava.com/spring-cloud/elk-stack-tutorial-example/
+
+
+
+OWASP:open web application security project
+
+WAF:web application firewall
+
+	broken object level authorization
+
+	broken  authentication
+	
+	excessive data exposure
+	
+	lack of resource and rate limiting
+
+	security  misconfiguration
+	
+	https://www.veracode.com/security/owasp-top-10
+	
+	@Cacheable
+	
